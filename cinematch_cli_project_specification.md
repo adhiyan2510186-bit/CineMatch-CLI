@@ -126,9 +126,9 @@ The `RecommendationEngineTest.java` class verifies critical functionalities usin
 ## 6. Implementation Checklist & Deliverables
 
 - [x] Problem statement, scope, and objective definition.
-- [ ] Implement core entities (`Media`, `Movie`, `User`).
-- [ ] Implement file readers and writers (`MovieDataLoader`, `UserDataRepository`).
-- [ ] Implement `RecommendationStrategy` implementations (`HybridRecommendation`, `SurpriseMeStrategy`).
-- [ ] Build interactive `Scanner` menu loop with exception handling in `Main.java`.
-- [ ] Write JUnit test suite in `RecommendationEngineTest.java`.
-- [ ] Create UML Class Diagram for final submission documentation.
+- [x] Implement core entities (`Media`, `Movie`, `User`).
+- [x] Implement file readers and writers (`MovieDataLoader`, `UserDataRepository`).
+- [x] Implement `RecommendationStrategy` implementations (`HybridRecommendation`, `SurpriseMeStrategy`).
+- [x] Build interactive `Scanner` menu loop with exception handling in `Main.java`.
+- [x] Write JUnit test suite in `RecommendationEngineTest.java`.
+- [x] Create UML Class Diagram for final submission documentation.
