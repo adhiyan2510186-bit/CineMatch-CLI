@@ -1,0 +1,15 @@
+# Build output
+out/
+bin/
+*.class
+
+# Runtime user data
+data/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
