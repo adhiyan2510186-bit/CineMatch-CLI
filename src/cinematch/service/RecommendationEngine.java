@@ -63,6 +63,10 @@ public class RecommendationEngine {
         return index.get(id);
     }
 
+    public List<Movie> searchByTitle(String query) {
+        return search(query, m -> Collections.singletonList(m.getTitle()));
+    }
+
     public List<Movie> searchByGenre(String query) {
         return search(query, m -> Collections.singletonList(m.getGenre()));
     }

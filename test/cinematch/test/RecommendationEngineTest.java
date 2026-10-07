@@ -178,6 +178,15 @@ class RecommendationEngineTest {
     }
 
     @Test
+    void testSearchByTitle() {
+        assertEquals(1, engine.searchByTitle("STORY").size(), "case-insensitive");
+        assertEquals("Toy Story", engine.searchByTitle("story").get(0).getTitle());
+        assertEquals(3, engine.searchByTitle("the").size(), "partial matches");
+        assertTrue(engine.searchByTitle("Titanic").isEmpty());
+        assertTrue(engine.searchByTitle("  ").isEmpty());
+    }
+
+    @Test
     void testRatingValidation() {
         User user = new User("frank");
         assertThrows(IllegalArgumentException.class, () -> user.rate(1, 0.5));

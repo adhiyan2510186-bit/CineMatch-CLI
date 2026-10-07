@@ -44,10 +44,10 @@ java -cp out cinematch.Main
   - **Base:** your own rating, or IMDb / 2 if you haven't rated the movie.
   - **Boosts:** taken from the movies you rated 4 stars or higher. A shared genre adds +1.0, any shared lead actor adds +1.0, and each shared theme keyword adds +0.5.
   - Movies you have watched are left out.
-- **Search.** Find movies by genre, director, actor or theme. Matching ignores case and accepts partial text, so "nolan" finds Christopher Nolan.
+- **Search.** Find movies by genre, director, actor, theme or title. Matching ignores case and accepts partial text, so "nolan" finds Christopher Nolan.
 - **Surprise Me!**
   - **Wildcard:** a random movie you haven't seen.
   - **Hidden Gem:** a movie you haven't seen, rated IMDb 8.0 or higher, from outside your favorite genre.
-- **Ratings and watchlist.** Rate a movie from 1.0 to 5.0 stars, which also marks it as watched. You can add and remove watchlist entries and mark movies watched or unwatched.
+- **Ratings and watchlist.** Pick a movie by its ID or by typing part of its title (you choose from a list if several match). Rate it from 1.0 to 5.0 stars, which also marks it as watched. You can add and remove watchlist entries and mark movies watched or unwatched.
 - **Movie night planner.** Enter the minutes you have free. The planner picks the set of unwatched movies with the highest total match score that fits that time.
 - **Saving.** Data is saved to `data/` when you exit or switch profile. It is also saved if you quit with Ctrl+C.

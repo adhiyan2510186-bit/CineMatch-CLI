@@ -122,8 +122,8 @@ public class Main {
     }
 
     private void searchMenu() {
-        System.out.println(" 1. By genre   2. By director   3. By actor   4. By theme/style   0. Back");
-        int choice = readInt("Search by: ", 0, 4);
+        System.out.println(" 1. By genre   2. By director   3. By actor   4. By theme/style   5. By title   0. Back");
+        int choice = readInt("Search by: ", 0, 5);
         if (choice == 0) {
             return;
         }
@@ -139,7 +139,8 @@ public class Main {
                 break;
             case 2: results = engine.searchByDirector(query); break;
             case 3: results = engine.searchByActor(query); break;
-            default: results = engine.searchByTheme(query); break;
+            case 4: results = engine.searchByTheme(query); break;
+            default: results = engine.searchByTitle(query); break;
         }
         printMovies("Results for \"" + query + "\"", results);
     }
@@ -271,15 +272,48 @@ public class Main {
         }
     }
 
+    /** Asks for a movie by ID or (part of) its title until one is chosen. */
     private Movie readMovie() {
         while (true) {
-            int id = readInt("Movie ID: ", 1, Integer.MAX_VALUE);
-            Movie movie = engine.findById(id);
-            if (movie != null) {
-                return movie;
+            String input = readLine("Movie ID or title: ");
+            if (input.matches("\\d+")) {
+                Movie movie = engine.findById(Integer.parseInt(input));
+                if (movie != null) {
+                    return movie;
+                }
+                System.out.println("! No movie with ID " + input + ".");
+                continue;
             }
-            System.out.println("! No movie with ID " + id + ". Use Search to find IDs.");
+
+            List<Movie> matches = engine.searchByTitle(input);
+            for (Movie movie : matches) {
+                if (movie.getTitle().equalsIgnoreCase(input)) {
+                    return movie; // exact title wins over partial matches
+                }
+            }
+            if (matches.isEmpty()) {
+                System.out.println("! No movie title contains \"" + input + "\". Try again.");
+            } else if (matches.size() == 1) {
+                System.out.println("Found: " + matches.get(0).getTitle());
+                return matches.get(0);
+            } else {
+                Movie choice = chooseFrom(matches);
+                if (choice != null) {
+                    return choice;
+                }
+            }
         }
+    }
+
+    /** Lists several matches and lets the user pick one; returns null to search again. */
+    private Movie chooseFrom(List<Movie> matches) {
+        System.out.println("Several movies match:");
+        for (int i = 0; i < matches.size(); i++) {
+            Movie movie = matches.get(i);
+            System.out.printf(" %d. %s (%s, ID %d)%n", i + 1, movie.getTitle(), movie.getGenre(), movie.getId());
+        }
+        int pick = readInt("Pick one (0 to search again): ", 0, matches.size());
+        return pick == 0 ? null : matches.get(pick - 1);
     }
 
     private List<Movie> lookup(Iterable<Integer> ids) {
