@@ -1,0 +1,43 @@
+ID,Title,Genre,Director,LeadActors,Keywords,IMDbRating,Duration
+1,Inception,Sci-Fi,Christopher Nolan,Leonardo DiCaprio|Joseph Gordon-Levitt,Mind-Bending|Heist|Dreams,8.8,148
+2,Interstellar,Sci-Fi,Christopher Nolan,Matthew McConaughey|Anne Hathaway,Space|Time Travel|Emotional,8.7,169
+3,The Dark Knight,Action,Christopher Nolan,Christian Bale|Heath Ledger,Gritty|Superhero|Crime,9.0,152
+4,Pulp Fiction,Crime,Quentin Tarantino,John Travolta|Uma Thurman,Non-Linear|Gangster|Cult,8.9,154
+5,Shutter Island,Mystery,Martin Scorsese,Leonardo DiCaprio|Mark Ruffalo,Psychological|Twist|Dark,8.2,138
+6,The Shawshank Redemption,Drama,Frank Darabont,Tim Robbins|Morgan Freeman,Hope|Prison|Friendship,9.3,142
+7,Forrest Gump,Drama,Robert Zemeckis,Tom Hanks|Robin Wright,Inspirational|History|Life,8.8,142
+8,Gladiator,Action,Ridley Scott,Russell Crowe|Joaquin Phoenix,Revenge|Ancient Rome|Epic,8.5,155
+9,The Matrix,Sci-Fi,Lana Wachowski,Keanu Reeves|Laurence Fishburne,Mind-Bending|Dystopia|Cyberpunk,8.7,136
+10,Memento,Mystery,Christopher Nolan,Guy Pearce|Carrie-Anne Moss,Non-Linear|Memory|Twist,8.4,113
+11,The Prestige,Mystery,Christopher Nolan,Christian Bale|Hugh Jackman,Twist|Magic|Rivalry,8.5,130
+12,The Departed,Crime,Martin Scorsese,Leonardo DiCaprio|Matt Damon,Undercover|Gangster|Betrayal,8.5,151
+13,Goodfellas,Crime,Martin Scorsese,Robert De Niro|Ray Liotta,Gangster|Mafia|True Story,8.7,146
+14,The Wolf of Wall Street,Comedy,Martin Scorsese,Leonardo DiCaprio|Jonah Hill,Greed|True Story|Excess,8.2,180
+15,Django Unchained,Action,Quentin Tarantino,Jamie Foxx|Leonardo DiCaprio,Revenge|Western|Slavery,8.5,165
+16,Inglourious Basterds,Action,Quentin Tarantino,Brad Pitt|Christoph Waltz,War|Revenge|History,8.4,153
+17,Fight Club,Drama,David Fincher,Brad Pitt|Edward Norton,Psychological|Twist|Cult,8.8,139
+18,Se7en,Thriller,David Fincher,Brad Pitt|Morgan Freeman,Serial Killer|Dark|Detective,8.6,127
+19,Gone Girl,Thriller,David Fincher,Ben Affleck|Rosamund Pike,Twist|Marriage|Psychological,8.1,149
+20,The Silence of the Lambs,Thriller,Jonathan Demme,Jodie Foster|Anthony Hopkins,Serial Killer|Psychological|Detective,8.6,118
+21,Saving Private Ryan,Drama,Steven Spielberg,Tom Hanks|Matt Damon,War|History|Brotherhood,8.6,169
+22,Cast Away,Drama,Robert Zemeckis,Tom Hanks|Helen Hunt,Survival|Isolation|Life,7.8,143
+23,Back to the Future,Sci-Fi,Robert Zemeckis,Michael J. Fox|Christopher Lloyd,Time Travel|Comedy|Cult,8.5,116
+24,Jurassic Park,Sci-Fi,Steven Spielberg,Sam Neill|Laura Dern,Dinosaurs|Adventure|Survival,8.2,127
+25,The Martian,Sci-Fi,Ridley Scott,Matt Damon|Jessica Chastain,Space|Survival|Isolation,8.0,144
+26,Alien,Sci-Fi,Ridley Scott,Sigourney Weaver|Tom Skerritt,Space|Horror|Survival,8.5,117
+27,Toy Story,Animation,John Lasseter,Tom Hanks|Tim Allen,Friendship|Family|Toys,8.3,81
+28,Spirited Away,Animation,Hayao Miyazaki,Rumi Hiiragi|Miyu Irino,Fantasy|Coming of Age|Spirits,8.6,125
+29,Up,Animation,Pete Docter,Ed Asner|Jordan Nagai,Adventure|Emotional|Friendship,8.3,96
+30,WALL-E,Animation,Andrew Stanton,Ben Burtt|Elissa Knight,Space|Dystopia|Love,8.4,98
+31,The Lion King,Animation,Roger Allers,Matthew Broderick|James Earl Jones,Family|Coming of Age|Revenge,8.5,88
+32,The Grand Budapest Hotel,Comedy,Wes Anderson,Ralph Fiennes|Tony Revolori,Quirky|Heist|Friendship,8.1,99
+33,Groundhog Day,Comedy,Harold Ramis,Bill Murray|Andie MacDowell,Time Loop|Romance|Life,8.0,101
+34,The Big Lebowski,Comedy,Joel Coen,Jeff Bridges|John Goodman,Cult|Quirky|Crime,8.1,117
+35,Superbad,Comedy,Greg Mottola,Jonah Hill|Michael Cera,Friendship|Coming of Age|Party,7.6,113
+36,Mad Max: Fury Road,Action,George Miller,Tom Hardy|Charlize Theron,Dystopia|Chase|Survival,8.1,120
+37,John Wick,Action,Chad Stahelski,Keanu Reeves|Michael Nyqvist,Revenge|Assassin|Gritty,7.4,101
+38,Knives Out,Mystery,Rian Johnson,Daniel Craig|Ana de Armas,Whodunit|Detective|Family,7.9,130
+39,Prisoners,Thriller,Denis Villeneuve,Hugh Jackman|Jake Gyllenhaal,Kidnapping|Detective|Dark,8.1,153
+40,No Country for Old Men,Crime,Joel Coen,Javier Bardem|Josh Brolin,Gritty|Chase|Western,8.2,122
+41,Whiplash,Drama,Damien Chazelle,Miles Teller|J.K. Simmons,Music|Ambition|Mentor,8.5,106
+42,"Monsters, Inc.",Animation,Pete Docter,Billy Crystal|John Goodman,Friendship|Family|Comedy,8.1,92
